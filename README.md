@@ -18,7 +18,7 @@ object_type_id = 7
 In the parameters above, it does not matter what you enter for ```object_name```, but getting the correct ```object_type_id``` is important.
 
 ### Field Data Packet
-Format Example: ```{field: [field_id, field datatype]}```
+Format Example: ```{field: [field_id, field_datatype]}```
 
 ```python
 data_dict = {'ds_id':[3147,'integer_value'],
