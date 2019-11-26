@@ -10,7 +10,7 @@ This utility takes in the field_id and field_datatype value for each property of
 
 ### Run the following in compose to get a mapping for your object
 
-```
+```sql
 SELECT DISTINCT
     OFV.field_id,
     OBF.field_name,
@@ -24,3 +24,5 @@ JOIN
 WHERE
     OFV.object_type_id = ${Object Type ID | E.g. Article = 0};
 ```
+
+Please refer to Alation's [Help Center](https://alationhelp.zendesk.com/hc/en-us/sections/360003193413-Alation-Analytics) for complete documention for Alation Analytics.
