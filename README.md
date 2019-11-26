@@ -10,11 +10,15 @@ This utility takes in the field_id and field_datatype value for each property of
 
 The query is produced based on a data packet which looks like:
 
+### Object Identification
 ```python
 object_name = 'datasource'
 object_type_id = 7
 ```
 In the parameters above, it does not matter what you enter for ```object_name```, but getting the correct ```object_type_id``` is important.
+
+### Field Data Packet
+Format Example: ```{field: [field_id, field datatype]}```
 
 ```python
 data_dict = {'ds_id':[3147,'integer_value'],
