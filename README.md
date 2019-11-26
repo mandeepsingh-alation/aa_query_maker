@@ -11,16 +11,16 @@ This utility takes in the field_id and field_datatype value for each property of
 ### Run the following in compose to get a mapping for your object
 
 ```
-    SELECT DISTINCT
-        OFV.field_id,
-        OBF.field_name,
-        OBF.field_datatype
-    FROM
-        public.object_field_value AS OFV
-    JOIN
-        public.object_field AS OBF
-        ON
-            OFV.field_id = OBF.field_id
-    WHERE
-        OFV.object_type_id = ${Object Type ID | E.g. Article = 0};
+SELECT DISTINCT
+    OFV.field_id,
+    OBF.field_name,
+    OBF.field_datatype
+FROM
+    public.object_field_value AS OFV
+JOIN
+    public.object_field AS OBF
+    ON
+        OFV.field_id = OBF.field_id
+WHERE
+    OFV.object_type_id = ${Object Type ID | E.g. Article = 0};
 ```
